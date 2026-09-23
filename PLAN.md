@@ -8,11 +8,15 @@ Viết chương trình Python trên Raspberry Pi: nhập tên thành phố, dùn
 
 1. Đối chiếu mục 10, trang 125–127 của *Getting Started with Raspberry Pi*; chọn API thời tiết và cách nối LED với GPIO.
 2. Viết chương trình đọc API key từ biến môi trường, gọi API theo thành phố và xử lý dữ liệu JSON.
-3. Hiển thị nhiệt độ, độ ẩm; bật hoặc tắt LED theo ngưỡng cấu hình. Xử lý lỗi mạng, API key và tên thành phố.
-4. Viết hướng dẫn cài đặt, chạy chương trình và nối mạch. Kiểm thử phần lấy dữ liệu, logic LED và chạy thử trên Raspberry Pi.
+3. Hiển thị nhiệt độ, độ ẩm; bật hoặc tắt LED theo ngưỡng cấu hình.
+4. Viết hướng dẫn cài đặt, chạy chương trình và nối mạch. Kiểm thử luồng lấy dữ liệu, logic LED và chạy thử trên Raspberry Pi khi có thiết bị.
 
 ## Kết quả cần có
 
 Mã nguồn, tệp khai báo thư viện, mẫu cấu hình API key, hướng dẫn sử dụng và bài kiểm thử. API key thật không được đưa vào Git.
 
 Tham khảo: [repo ví dụ](https://github.com/dothang13/lthtn2026_weather).
+
+## Trạng thái
+
+Đã viết mã, tài liệu và kiểm thử tự động. Còn cần thử API key thật và mạch LED trên Raspberry Pi.
