@@ -9,14 +9,8 @@
 - [x] Chạy 7 kiểm thử tự động; thử API thật và GPIO giả trong Codespaces.
 - [ ] Thử LED và GPIO trên Raspberry Pi thật.
 
-## Phiên bản tiếp theo — theo dõi thời tiết
+## Các cập nhật tiếp theo (theo thứ tự)
 
-- [ ] Tự cập nhật dữ liệu sau khoảng thời gian cấu hình được (dự kiến 10–15 phút).
-- [ ] Cho phép đổi thành phố khi chương trình đang chạy; chỉ tra lại tọa độ khi đổi thành phố.
-- [ ] Cập nhật LED sau mỗi lần lấy dữ liệu; bổ sung hướng dẫn và kiểm thử cho luồng mới.
-
-## Phiên bản sau — dữ liệu chứng khoán
-
-- [ ] Chọn API chứng khoán, xác định mã cổ phiếu và giới hạn gọi API.
-- [ ] Cho phép chọn chế độ thời tiết hoặc chứng khoán; đặt quy tắc LED phù hợp với giá cổ phiếu.
-- [ ] Bổ sung cấu hình API key, tài liệu và kiểm thử cho chế độ mới.
+1. [Cập nhật 1 — Tự làm mới thời tiết](plans/01-tu-dong-cap-nhat-thoi-tiet.md): lấy dữ liệu theo chu kỳ và cập nhật LED.
+2. [Cập nhật 2 — Đổi thành phố khi đang chạy](plans/02-doi-thanh-pho-khi-dang-chay.md): đổi địa điểm mà không khởi động lại.
+3. [Cập nhật 3 — Bổ sung giá cổ phiếu](plans/03-bo-sung-gia-co-phieu.md): thêm chế độ dữ liệu chứng khoán và quy tắc LED riêng.
