@@ -28,6 +28,8 @@ python app.py
 
 Nhập `Hanoi,VN` khi được hỏi. Chương trình in nhiệt độ (°C), độ ẩm (%) và trạng thái LED; nhấn Enter để tắt LED và kết thúc. Muốn đổi ngưỡng, sửa `TEMP_THRESHOLD_C` trong `config.sh`.
 
+Nếu OpenWeather báo lỗi 401, kiểm tra key trong `config.sh` và trạng thái kích hoạt key trong tài khoản OpenWeather. Key mới có thể cần tới 2 giờ để kích hoạt. Nếu key từng xuất hiện trong log hoặc ảnh chụp màn hình chia sẻ, hãy thu hồi key đó và tạo key mới. Không đưa `config.sh` lên Git.
+
 ## Kiểm thử
 
 ```sh

@@ -11,7 +11,11 @@ def main():
     city = input("Nhập thành phố: ").strip()
     api_key = os.environ["OPENWEATHER_API_KEY"]
     threshold = float(os.getenv("TEMP_THRESHOLD_C", "30"))
-    name, temperature, humidity = get_weather(city, api_key)
+    try:
+        name, temperature, humidity = get_weather(city, api_key)
+    except ValueError as error:
+        print(f"Lỗi: {error}")
+        return
 
     print(f"{name}: {temperature:.1f} °C, độ ẩm {humidity}%")
 

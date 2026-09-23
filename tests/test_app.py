@@ -36,6 +36,15 @@ class AppTests(unittest.TestCase):
         self.assertEqual(led.off.call_count, 2)
         led.close.assert_called_once()
 
+    @patch.dict("os.environ", {"OPENWEATHER_API_KEY": "test-key"})
+    @patch("app.get_weather", side_effect=ValueError("API key không hợp lệ."))
+    @patch("builtins.input", return_value="Hanoi,VN")
+    def test_main_shows_api_error(self, user_input, get_weather):
+        with patch("builtins.print") as output:
+            main()
+
+        output.assert_called_once_with("Lỗi: API key không hợp lệ.")
+
 
 if __name__ == "__main__":
     unittest.main()

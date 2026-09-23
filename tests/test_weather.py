@@ -1,6 +1,8 @@
 import unittest
 from unittest.mock import Mock, patch
 
+import requests
+
 from weather import get_weather
 
 
@@ -23,6 +25,20 @@ class GetWeatherTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "Không tìm thấy thành phố"):
             get_weather("Unknown", "test-key")
+
+    @patch("weather.requests.get")
+    def test_unauthorized_does_not_reveal_key(self, get):
+        response = Mock(status_code=401)
+        response.raise_for_status.side_effect = requests.HTTPError(
+            "401 for URL with secret-key", response=response
+        )
+        get.return_value = response
+
+        with self.assertRaises(ValueError) as caught:
+            get_weather("Hanoi,VN", "secret-key")
+
+        self.assertIn("API key", str(caught.exception))
+        self.assertNotIn("secret-key", str(caught.exception))
 
 
 if __name__ == "__main__":
