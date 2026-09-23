@@ -36,7 +36,7 @@ Nếu OpenWeather báo lỗi 401, kiểm tra key trong `config.sh` và trạng t
 python -m unittest discover -s tests -v
 ```
 
-Bài kiểm thử dùng dữ liệu API và LED giả nên chạy được khi không có Raspberry Pi hoặc API key. Chưa chạy thử API thật và mạch LED vì môi trường hiện tại không có key hay thiết bị Pi.
+Bài kiểm thử dùng dữ liệu API và LED giả nên chạy được khi không có Raspberry Pi hoặc API key. Đã thử API thật và GPIO giả trong Codespaces; chưa thử LED trên Raspberry Pi thật.
 
 ## Liên hệ với bài tập
 

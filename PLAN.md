@@ -1,22 +1,22 @@
-# Kế hoạch: Lấy dữ liệu thời tiết từ Internet
+# Kế hoạch dự án
 
-## Mục tiêu
+## Phiên bản hiện tại — luồng chính
 
-Viết chương trình Python trên Raspberry Pi: nhập tên thành phố, dùng API key lấy nhiệt độ và độ ẩm từ web server, hiển thị kết quả và điều khiển đèn LED theo ngưỡng nhiệt độ.
+- [x] Đối chiếu mục 10, trang 125–127 của *Getting Started with Raspberry Pi*.
+- [x] Nhập thành phố, dùng API key lấy nhiệt độ và độ ẩm từ OpenWeather.
+- [x] Hiển thị dữ liệu và bật/tắt LED theo ngưỡng nhiệt độ cấu hình được.
+- [x] Viết hướng dẫn cài đặt, nối mạch và bảo vệ API key khỏi Git/log lỗi.
+- [x] Chạy 7 kiểm thử tự động; thử API thật và GPIO giả trong Codespaces.
+- [ ] Thử LED và GPIO trên Raspberry Pi thật.
 
-## Các bước
+## Phiên bản tiếp theo — theo dõi thời tiết
 
-1. Đối chiếu mục 10, trang 125–127 của *Getting Started with Raspberry Pi*; chọn API thời tiết và cách nối LED với GPIO.
-2. Viết chương trình đọc API key từ biến môi trường, gọi API theo thành phố và xử lý dữ liệu JSON.
-3. Hiển thị nhiệt độ, độ ẩm; bật hoặc tắt LED theo ngưỡng cấu hình.
-4. Viết hướng dẫn cài đặt, chạy chương trình và nối mạch. Kiểm thử luồng lấy dữ liệu, logic LED và chạy thử trên Raspberry Pi khi có thiết bị.
+- [ ] Tự cập nhật dữ liệu sau khoảng thời gian cấu hình được (dự kiến 10–15 phút).
+- [ ] Cho phép đổi thành phố khi chương trình đang chạy; chỉ tra lại tọa độ khi đổi thành phố.
+- [ ] Cập nhật LED sau mỗi lần lấy dữ liệu; bổ sung hướng dẫn và kiểm thử cho luồng mới.
 
-## Kết quả cần có
+## Phiên bản sau — dữ liệu chứng khoán
 
-Mã nguồn, tệp khai báo thư viện, mẫu cấu hình API key, hướng dẫn sử dụng và bài kiểm thử. API key thật không được đưa vào Git.
-
-Tham khảo: [repo ví dụ](https://github.com/dothang13/lthtn2026_weather).
-
-## Trạng thái
-
-Đã viết mã, tài liệu và kiểm thử tự động. Còn cần thử API key thật và mạch LED trên Raspberry Pi.
+- [ ] Chọn API chứng khoán, xác định mã cổ phiếu và giới hạn gọi API.
+- [ ] Cho phép chọn chế độ thời tiết hoặc chứng khoán; đặt quy tắc LED phù hợp với giá cổ phiếu.
+- [ ] Bổ sung cấu hình API key, tài liệu và kiểm thử cho chế độ mới.
