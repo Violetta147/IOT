@@ -2,7 +2,7 @@
 
 ## Mục tiêu
 
-Người dùng đổi thành phố từ terminal mà không cần khởi động lại chương trình ở cập nhật 1.
+Hiện đã có thể nhập nhiều thành phố liên tiếp. Bổ sung khả năng đổi thành phố từ terminal trong lúc chương trình ở cập nhật 1 đang chờ lần lấy dữ liệu tiếp theo.
 
 ## Thực hiện
 
